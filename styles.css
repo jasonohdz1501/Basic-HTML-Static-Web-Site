@@ -1,0 +1,260 @@
+.menu-nav {
+    font-family: 'Raleway', sans-serif;
+    font-weight:600;
+    font-size: 28px;
+    margin: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    
+}
+.menu-nav a:hover {
+    animation-name: select;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes select {
+    0%{
+        color:#5E7F8C;
+    transform: scale(1.0);
+    }
+    100%{
+        color:#F27B50;
+    transform: scale(2.1);
+    }
+}
+
+
+.menu-nav li a{
+    color:#5E7F8C
+}
+body, main {
+    display:flex;
+}
+body {
+    flex-direction:column;
+}
+main {
+    flex-direction:row;
+    flex: auto;
+}
+aside {
+    flex: 1;
+    overflow-y: auto;
+}
+article {
+    flex: 2;
+    overflow-y: auto;
+}
+h1, h2 {
+    font-family: 'Raleway', sans-serif;
+    padding: 10px 10px 10px 10px;
+    color: #5E7F8C;
+    text-align: center;
+    font-weight:600;
+}
+p, li{
+    text-align: justify;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.8;
+    font-weight:400;
+}
+
+.hero-image{
+    position: relative;
+    text-align: center;
+    color: white;
+    opacity: 100%;
+}
+.container-maintitle {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+#main-title {
+    color: black;
+    font-size: 75px;
+}
+h3 {
+    font-family: 'Raleway', sans-serif;
+    padding: 10px 10px 10px 10px;
+    color: #5E7F8C;
+    text-align: center;
+    font-weight:600;
+} 
+h4 {
+    font-family: 'Raleway', sans-serif;
+    padding: 10px 10px 10px 10px;
+    color: #5E7F8C;
+    text-align: center;
+    font-weight:400;
+} 
+#content-list a{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    line-height: 2;
+    color: #F5B5A5;
+}
+#content-list a:hover {
+    color: #FF561A;
+}
+
+.container-text {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px 5px;
+    padding: 20px;
+   
+}
+.images {
+    height: 170px;
+    width: 250px;
+}
+
+.container-box {
+  display: flex;
+flex-wrap: wrap;
+}
+.box1 {
+    flex: 1 1 auto;
+    margin: 10px;
+    padding: 2px;
+    text-align: center;
+    position:relative;
+}
+/*Responsive properties*/
+@media (max-width: 1024px) {
+    p {
+        font-size: 12px;
+    }
+    h1 {
+        font-size: 16px;
+    }
+    h2 {
+        font-size: 14px;
+    }
+    h3 {
+        font-size: 12px;
+    }
+    h4 {
+        font-size: 10px;
+    }
+    li {
+        font-size: 12px;
+    }
+    #content-list a{
+        font-size: 12px;
+    }
+    .menu-nav a{
+        font-size: 25px;
+    }
+    footer p{
+        font-size: 10px;
+    }   
+    #main-title {
+        font-size: 25px;
+        }
+    
+}
+}
+
+footer p{
+    font-size: 20px;
+    text-align: center;
+}
+
+footer a:hover {
+    animation-name: select;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes select {
+    0%{
+        color:#5E7F8C;
+    transform: scale(1.0);
+    }
+    100%{
+        color:#F27B50;
+    transform: scale(2.1);
+    }
+}
+
+
+/*Make description appear over imagen when hover*/
+.wrap_image {
+    position:relative;
+    height: 170px;
+    width: 250px;
+    
+}
+.image_description {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(115, 115, 115, 0.5);
+      color: #000;
+      visibility: visible;
+      opacity: 0;
+      font-size: 12px;
+    font-weight: 600;
+}
+
+.wrap_image:hover{
+    animation-name: upimage;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes upimage{
+    0% {
+        transform: scale(1.0);
+        opacity: 100%;
+    }
+    100% {
+        transform: scale(1.1);
+        opacity: 70%;
+    }
+}
+.image_description:hover{
+    animation-name: up;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes up {
+    0% {
+        transform: scale(1.0);
+        visibility: visible;
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1.0);
+        visibility: visible;
+        opacity: 100%;
+    }
+}
+
+.aside {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow:10px 10px rgba(128, 128, 128, 0.1);
+}
+#footer_sign {
+    text-align: center;
+}
+
+.holberton_link {
+    color: red;
+}
+
+.tweets {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow:10px 10px rgba(128, 128, 128, 0.1); 
+    padding: 20px;
+}
